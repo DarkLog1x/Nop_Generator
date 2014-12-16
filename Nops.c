@@ -14,8 +14,10 @@ int main(int argc, char *argv[]){
 	int i;
 	for(i = 0; i < atoi(argv[1]); i++){
 		int random = rand() % sizeof(array);
-		printf("0x%x", array[random]);
+		printf("\\x%x", array[random]);
 	}
+
+	printf("\n");
 
 	return 0;
 }
